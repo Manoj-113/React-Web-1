@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
-import CustomBtn from './components/CustomBtn'
+import NavBar from './components/NavBar'
 
 const theme = createMuiTheme({
   palette: {
@@ -33,7 +33,7 @@ function App() {
     <div className="App">
 
       <ThemeProvider theme={theme}>
-        <CustomBtn txt = "hello world"/>
+        <NavBar/>
       </ThemeProvider>
 
       {/* <header className="App-header">

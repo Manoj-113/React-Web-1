@@ -38,7 +38,6 @@ const styles = makeStyles({
     }
 })
 
-
 function NavBar() {
     const classes = styles()
     return (
@@ -48,23 +47,18 @@ function NavBar() {
             <Typography variant = "h6" className={classes.menuItem}>
                 About
             </Typography>
-
             <Typography variant = "h6" className={classes.menuItem}>
                 Blog
             </Typography>
-
             <Typography variant = "h6" className={classes.menuItem}>
                 Careers
             </Typography>
-
             <Typography variant = "h6" className={classes.menuItem}>
                 Demos
             </Typography>
-
             <Typography variant = "h6" className={classes.menuItem}>
                 Contact Us
             </Typography>
-
             <CustomBtn txt = "Trial Our Product"/>
         </Toolbar>
     )
