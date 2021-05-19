@@ -56,7 +56,12 @@ const styles = makeStyles({
   },
 });
 
+
+
 function App() {
+
+  const classes = styles();
+
   return (
     <div className="App">
 
