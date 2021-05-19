@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { createMuiTheme, ThemeProvider, makeStyles} from '@material-ui/core/styles';
+import {Typography} from '@material-ui/core';
 import NavBar from './components/NavBar'
 import Grid from './components/Grid'
 
@@ -54,17 +55,12 @@ const styles = makeStyles({
     alignItems:"center",
     flexWrap: "wrap",
   },
-});
-
-
+})
 
 function App() {
-
   const classes = styles();
-
   return (
     <div className="App">
-
       <ThemeProvider theme={theme}>
         <NavBar/>
 
@@ -75,29 +71,11 @@ function App() {
         </div>
 
         <div className={'${classes.grid} ${classes.littleSpacer}'}>
-          <Grid icon = {<ImportExportIcon style={{fill: '#D05B2D',height: '125', width: '125'}}/>} title="Downloads" btnTitle= "Show me More"/>
-          <Grid icon = {<ComputerIcon style={{fill: '#D05B2D',height: '125', width: '125'}}/>} title="Profile" btnTitle= "Show me More"/>
-          <Grid icon = {<HttpIcon style={{fill: '#D05B2D',height: '125', width: '125'}}/>} title="Site" btnTitle= "Show me More"/>
+          <Grid icon = {<ImportExportIcon style={{fill: '#D05B2D',height: '125', width: '125'}}/>} title="Modular" btnTitle= "Show me More"/>
+          <Grid icon = {<ComputerIcon style={{fill: '#D05B2D',height: '125', width: '125'}}/>} title="Multi-Platform" btnTitle= "Show me More"/>
+          <Grid icon = {<HttpIcon style={{fill: '#D05B2D',height: '125', width: '125'}}/>} title="Connected" btnTitle= "Show me More"/>
         </div>
-        
-
-
       </ThemeProvider>
-
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
     </div>
   );
 }
