@@ -43,8 +43,11 @@ function App() {
       <ThemeProvider theme={theme}>
         <NavBar/>
         <Grid icon = {<SecurityIcon style={{fill: '#4360A6',height: '125', width: '125'}}/>} title="Secure" btnTitle= "Show me More"/>
-        <Grid icon = {<SecurityIcon style={{fill: '#449A76',height: '125', width: '125'}}/>} title="Reliable" btnTitle= "Show me More"/>
-        <Grid icon = {<SecurityIcon style={{fill: '#D05B2D',height: '125', width: '125'}}/>} title="Performance" btnTitle= "Show me More"/>
+        <Grid icon = {<EventNoteIcon style={{fill: '#449A76',height: '125', width: '125'}}/>} title="Reliable" btnTitle= "Show me More"/>
+        <Grid icon = {<TrendingUpIcon style={{fill: '#D05B2D',height: '125', width: '125'}}/>} title="Performance" btnTitle= "Show me More"/>
+        <Grid icon = {<ImportExportIcon style={{fill: '#D05B2D',height: '125', width: '125'}}/>} title="Downloads" btnTitle= "Show me More"/>
+        <Grid icon = {<ComputerIcon style={{fill: '#D05B2D',height: '125', width: '125'}}/>} title="Profile" btnTitle= "Show me More"/>
+        <Grid icon = {<HttpIcon style={{fill: '#D05B2D',height: '125', width: '125'}}/>} title="Site" btnTitle= "Show me More"/>
 
 
       </ThemeProvider>
