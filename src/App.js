@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
+import { createMuiTheme, ThemeProvider, makeStyles} from '@material-ui/core/styles';
 import NavBar from './components/NavBar'
 import Grid from './components/Grid'
 
@@ -33,6 +33,26 @@ const theme = createMuiTheme({
       fontweight:100,
       lineHeight:'2rem',
     },
+  },
+});
+
+const styles = makeStyles({
+  wrapper: {
+    width:"65%",
+    margin:"auto",
+    textAlign:"center",
+  },
+  bigSpacer:{
+    marginTop:"5rem",
+  },
+  littleSpace:{
+    marginTop:"2.5rem",
+  },
+  grid: {
+    display:"flex",
+    justifyContent:"center",
+    alignItems:"center",
+    flexWrap: "wrap",
   },
 });
 
