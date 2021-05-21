@@ -64,6 +64,15 @@ function App() {
       <ThemeProvider theme={theme}>
         <NavBar/>
 
+        <div className = {classes.wrapper}>
+          <Typography variant = "h4" className={classes.bigSpacer} color="primary">
+            At Rocket.io we are passionate about software
+          </Typography>
+          <Typography variant = "h5" className={classes.littleSpacer} color="primary">
+            asdfgasdgasdfgsdfgvasdgfadsfasdfadsf
+          </Typography>
+        </div>
+
         <div className={"${classes.grid} ${classes.bigSpacer}"}>
           <Grid icon = {<SecurityIcon style={{fill: '#4360A6',height: '125', width: '125'}}/>} title="Secure" btnTitle= "Show me More"/>
           <Grid icon = {<EventNoteIcon style={{fill: '#449A76',height: '125', width: '125'}}/>} title="Reliable" btnTitle= "Show me More"/>
