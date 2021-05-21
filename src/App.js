@@ -64,13 +64,13 @@ function App() {
       <ThemeProvider theme={theme}>
         <NavBar/>
 
-        <div className={'${classes.grid} ${classes.bigSpacer}'}>
+        <div className={"${classes.grid} ${classes.bigSpacer}"}>
           <Grid icon = {<SecurityIcon style={{fill: '#4360A6',height: '125', width: '125'}}/>} title="Secure" btnTitle= "Show me More"/>
           <Grid icon = {<EventNoteIcon style={{fill: '#449A76',height: '125', width: '125'}}/>} title="Reliable" btnTitle= "Show me More"/>
           <Grid icon = {<TrendingUpIcon style={{fill: '#D05B2D',height: '125', width: '125'}}/>} title="Performance" btnTitle= "Show me More"/>
         </div>
 
-        <div className={'${classes.grid} ${classes.littleSpacer}'}>
+        <div className={"${classes.grid} ${classes.littleSpacer}"}>
           <Grid icon = {<ImportExportIcon style={{fill: '#D05B2D',height: '125', width: '125'}}/>} title="Modular" btnTitle= "Show me More"/>
           <Grid icon = {<ComputerIcon style={{fill: '#D05B2D',height: '125', width: '125'}}/>} title="Multi-Platform" btnTitle= "Show me More"/>
           <Grid icon = {<HttpIcon style={{fill: '#D05B2D',height: '125', width: '125'}}/>} title="Connected" btnTitle= "Show me More"/>
